@@ -3,7 +3,7 @@ description: A new Flutter project.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
-homepage: "https://flutter_search_in_appbar.github.io"
+homepage: https://misterdiallo.github.io/flutter_search_in_appbar
 documentation: https://github.com/misterdiallo/flutter_search_in_appbar
 # authors: @misterdiallo
 screenshots:
