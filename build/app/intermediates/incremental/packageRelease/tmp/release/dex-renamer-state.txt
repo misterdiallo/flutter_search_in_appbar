@@ -1,0 +1,4 @@
+#Fri Dec 16 19:42:29 CST 2022
+base.0=/Volumes/Data/Code/Learning/Flutter/flutter_search_in_appbar/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
