@@ -1,6 +1,10 @@
-# Flutter - Search and Filter in AppBar with complex Json data
+# Flutter - Search + Filter in AppBar
 
-## Demo
+`Android APK` : [Download Here](https://raw.githubusercontent.com/misterdiallo/flutter_search_in_appbar/main/DEMO/flutter_appbar_seach-MisterDiallo.apk)
+
+`Web version` : [Click Here](https://misterdiallo.github.io/flutter_search_in_appbar/)
+
+![Gif](https://raw.githubusercontent.com/misterdiallo/flutter_search_in_appbar/main/DEMO/flutterAppbarSearch-Misterdiallo.gif)
 
 ## Features
 
