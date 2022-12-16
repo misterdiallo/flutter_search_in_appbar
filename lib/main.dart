@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_search_in_appbar/pages/complex_search.dart';
 import 'package:flutter_search_in_appbar/pages/data_source.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         '/simple': (BuildContext context) =>
             const SimpleSearch(title: 'Simple Countries List'),
         '/complex': (BuildContext context) =>
-            const ComplexSearch(title: "Complex Countries List"),
+            const ComplexSearch(title: "Advanced Countries List"),
         '/data': (BuildContext context) =>
             const DataSource(title: "Data of Countries List"),
       },
@@ -44,8 +45,39 @@ class MyApp extends StatelessWidget {
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.headline5,
                     ),
+                    Text(
+                      "@misterdiallo",
+                      textAlign: TextAlign.center,
+                      style: Theme.of(context).textTheme.caption,
+                    ),
                     const SizedBox(
-                      height: 25,
+                      height: 5,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                          color: Colors.teal,
+                          borderRadius: BorderRadius.circular(15.0)),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 5.0, horizontal: 10),
+                        child: DefaultTextStyle(
+                          style: const TextStyle(
+                              fontSize: 10.0, color: Colors.white),
+                          child: AnimatedTextKit(
+                            repeatForever: true,
+                            pause: const Duration(milliseconds: 2000),
+                            animatedTexts: [
+                              TyperAnimatedText('Follow me: @misterdiallo'),
+                              TyperAnimatedText('A passionate Guinean'),
+                              TyperAnimatedText('and Flutter Lover'),
+                              TyperAnimatedText('By - Mister Diallo'),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 35,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -57,7 +89,7 @@ class MyApp extends StatelessWidget {
                         ),
                         ElevatedButton(
                           onPressed: () => _navigateTo('/complex'),
-                          child: const Text("Complex Search"),
+                          child: const Text("Advanced Search"),
                         ),
                       ],
                     ),
@@ -70,9 +102,13 @@ class MyApp extends StatelessWidget {
             ],
           );
         }),
-        floatingActionButton: ElevatedButton(
+        floatingActionButton: FloatingActionButton(
           onPressed: () => _navigateTo('/data'),
-          child: const Text("Data sources"),
+          backgroundColor: Colors.teal[900],
+          child: const Icon(
+            Icons.insert_drive_file_rounded,
+            // size: 35,
+          ),
         ),
       ),
     );
